@@ -10,6 +10,7 @@ import { Container } from "../components/Container";
 const Home: NextPage = () => {
   return (
     <>
+      {/* Navbar */}
       <div className="relative pt-6 pb-20 sm:py-6">
         <Container className="relative">
           <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
           </div>
         </Container>
       </div>
-
+      {/* Header */}
       <div className="mx-auto relative pt-10 pb-20 sm:py-20 bg-night-black">
         <Container className="relative">
           <div className="flex flex-col mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
                 artists are in town.
               </p>
             </div>
+            {/* CTA Button */}
             <div className="mt-8">
               <Button
                 href="#"
@@ -40,6 +42,8 @@ const Home: NextPage = () => {
                 ctaText="Connect your Spotify"
               ></Button>
             </div>
+            {/* Main */}
+            {/* Section - Playing near (Location) */}
             <div className="mt-[200px] flex flex-row justify-between">
               <ArtistCard
                 image_url="coastModern.jpeg"
@@ -63,6 +67,10 @@ const Home: NextPage = () => {
                 location="The Basement, Nashville"
               />
             </div>
+
+            {/* Section - Live Shows (fetch data)*/}
+            {/* Section - Trending Artists (fetch data) */}
+            {/* Section - Popular artists (fetch data) */}
           </div>
         </Container>
       </div>
