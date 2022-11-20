@@ -40,10 +40,10 @@ const Card = () => {
         {people.map((person) => (
           <li
             key={person.artistID}
-            className="h-full w-full col-span-1 divide-y divide-gray-200 rounded-lg"
+            className="col-span-1 divide-y divide-gray-200 rounded-lg"
           >
             <div
-              className="h-full w-full bg-cover bg-no-repeat bg-center rounded-lg min-h-[340px]"
+              className="h-full bg-cover bg-no-repeat bg-center rounded-lg min-h-[340px]"
               style={{ backgroundImage: `url(${person.imageUrl})` }}
             >
               <div className="w-full h-full bg-gradient-to-t from-gray-900 rounded-lg">
@@ -62,8 +62,7 @@ const Card = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div>
+            <div>
               <div className="-mt-px flex divide-x divide-gray-200">
                 <div className="flex w-0 flex-1">
                   <a
@@ -90,7 +89,7 @@ const Card = () => {
                   </a>
                 </div>
               </div>
-            </div> */}
+            </div>
           </li>
         ))}
       </ul>
